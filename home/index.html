@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - Sneha</title>
+  <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="responsive.css">
+  <style>
+      .loader { width: 48px; height: 48px; border: 5px solid #555; border-bottom-color: #fff; border-radius: 50%; display: inline-block; box-sizing: border-box; animation: rotation 1s linear infinite; } @keyframes rotation { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } } 
+  </style>
+</head>
+<body>
+  <div id="loadingScreen">
+      <h1>LOADING</h1>
+      <h1><span class="loader"></span></h1>
+     
+    </div>
+    
+    
+  <div class="container">
+    <!-- NAV-BAR... -->
+     <!--Navigation Bar vers-01 --
+    <nav class="navbar">
+      <div class="brand">SNEHA</div>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <div id="nav-menu" class="nav-links"></div>
+    </nav>  -->
+    
+    <!-- Navigation Bar --
+<nav class="navbar">
+  <div class="brand"><h1>SNEHA</h1></div>
+  <button class="hamburger" id="hamburger">&#9776;</button>
+  <div id="nav-menu" class="nav-links"></div>
+</nav><!- -->
+
+<!-- Navigation Bar vers-02-->
+    <header class="navbar">
+      <div class="brand">SNEHA</div>
+      <button class="hamburger" id="hamburger"><!--&#9776; --></button>
+      <div id="nav-menu" class="nav-links"></div>
+    </header>
+    <!-- Hero Section -->
+<section class="hero">
+  <div class="profpic">
+    <img id="propic2" src="../assets/images/propic.png" alt="">  
+  </div> 
+
+  <div id="bio">
+      
+   <div id="hero-box">
+    <div class="hero-text">
+       
+      <h1>I'M A DESIGNER</h1>        
+      <h2>Sneha Suresh</h2>
+      
+      <p>
+        "With passion for design and creativity,
+        and a <br>desire to solve real world problems
+        and make <br>everyday experiences better."
+      </p>
+      <div class="about-link" id="aboutlinks">
+        <div>
+          <a class="more-link" href="../about/index.html"><span>More About Me</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 -5 24 25"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="20" stroke-dashoffset="20" d="M3 12h17.5"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="20;0"/></path><path stroke-dasharray="12" stroke-dashoffset="12" d="M21 12l-7 7M21 12l-7 -7"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s" values="12;0"/></path></g></svg>
+          
+          </a>
+          <!--<span class="arrow">&#8599;</span> -->
+        </div>
+      </div><br>
+      <button class="btn"><a href="../contact/index.html"><strong>Available for Work</strong></a></button>
+    </div>
+   </div>
+    
+  </div>
+
+  <!-- Now add Status Section INSIDE Hero -->
+  <!--  --<section class="status">
+      
+        <button id="statusbtn"class="btn-outline">My Status</button>
+        <div class="quotes" id="quote-cards">      
+        </div>
+      
+  </section><! -->
+  
+</section> <!--  Closed HERO section here -->
+
+    <!-- Status Cards -->
+    <section class="status">
+        <div id="statusbtndiv">
+            <button class="btn-outline"id="statusbtn">My Status</button>
+        </div>
+        
+        <div class="quotes" id="quote-cards">
+            
+        </div>
+    </section> 
+    
+
+    <!-- Projects Section (static sample) -->
+    <section class="projects">
+        
+     <div id="projectheading" style="">
+         
+      <div class="more-projects" style="">                  
+      <button class="btn-outline" id="pjtbtn">Projects</button>                 
+      </div>
+      
+      <div class="more-projects" style="">
+        <div id="morepjctlink">          
+        <a class="more-link" href="../portfolio/index.html"><span>More Projects</span></a>
+       <!-- <div class="line"></div> -->
+        <!--<span class="arrow">&rarr;</span> -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 -5 24 25"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="20" stroke-dashoffset="20" d="M3 12h17.5"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="20;0"/></path><path stroke-dasharray="12" stroke-dashoffset="12" d="M21 12l-7 7M21 12l-7 -7"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s" values="12;0"/></path></g></svg>
+        </div>   
+      </div>
+      
+     </div>
+      
+      <!-- Project cards -->
+<div class="project-cards-container">
+<!--<div class="project-card"> -->
+    <img src="../assets/images/image1.png" alt="Shoe shopping interface design" class="project-image">
+ <!--</div> -->
+<!-- <div class="project-card"> -->
+    <img src="../assets/images/image2.png" alt="Plant UI Design concept" class="project-image">
+ <!--</div> -->
+</div>
+      
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+      <button class="btn-outline">My Services</button>
+      <div id="services-list"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <button class="btn"><a href="../contact/index.html"><strong>Available for work</strong></a></button>
+      <div class="email">snehasureshjan23@gmail.com</div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+   <!--    <div class="brand">SNEHA</div>
+      <div class="nav-links" id="footer-menu"></div> -->
+      <div class="socials">
+        <a href="https://www.behance.net/snehasuresh16" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="24" viewBox="0 0 576 512"><path fill="#fff" d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74c0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9c0-44.5-21.1-77.4-64.7-89.7M77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5c0 30.1-19.7 42.2-47.5 42.2h-79zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6c0 35.8-25.9 47-57.6 47m358.5-240.7H376V94h143.7zM576 305.2c0-75.9-44.4-139.2-124.9-139.2c-78.2 0-131.3 58.8-131.3 135.8c0 79.9 50.3 134.7 131.3 134.7c61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5c-41.3 0-63-24.2-63-65.3h185.1c.3-4.2.6-8.7.6-13.2M390.4 274c2.3-33.7 24.7-54.8 58.5-54.8c35.4 0 53.2 20.8 56.2 54.8z"/></svg></a>
+        <a href="https://twitter.com" target="_blank"><svg xmlns="mailto:snehasureshjan23@gmail.com" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M20 18h-2V9.25L12 13L6 9.25V18H4V6h1.2l6.8 4.25L18.8 6H20m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg></a>
+        <a href="https://www.linkedin.com/in/sneha-suresh-designer-5052172a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"/></svg></a>
+      </div><br>
+      <div class="credit">Created by: Ahens Designs</div>
+    </footer>
+  </div>
+
+  <script src="home.js"></script>
+  <script>
+      var loadingScreen = document.getElementById("loadingScreen");
+      window.addEventListener('load', function() {
+  loadingScreen.style.display = 'none';
+})
+  </script>
+  <!--  
+  <script>
+  fetch('../assets/navbar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar-placeholder').innerHTML = data;
+    });
+</script>
+ -->
+</body>
+</html>

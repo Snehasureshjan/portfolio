@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <style>
+*{
+    color:white;
+}       
+        /*  
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #181616;
+  border-radius: 35px;
+  box-shadow: 0 5px 5px #f5f5f5;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  height:50px;
+}
+.navbar .brand{
+    font-size: 22px
+}
+.nav-links a {
+  color: white;
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.nav-links .active {
+  border-color: white;
+}
+*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #181616;
+  border-radius: 35px;
+  box-shadow: 0 5px 5px #f5f5f5;
+  padding: 1.5rem 2rem;
+  margin-bottom: 3rem;
+}
+
+.brand {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin-left: 1rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.nav-links a.active {
+  background-color: white;
+  color: #181616;
+}
+
+
+@media (max-width:768px){
+.navbar {    
+    flex-direction: row;
+    position: relative;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  
+  .navbar{
+      height:28px;
+  }
+  .nav-links {
+    margin: auto;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: -1rem;
+    background: #333333;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+    z-index: 10;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .nav-links a{
+      margin: 0 0 1rem;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+}
+    </style>
+</head>
+<body>
+    <!--Navigation Bar vers-01 --
+    <nav class="navbar">
+      <div class="brand">SNEHA</div>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <div id="nav-menu" class="nav-links"></div>
+    </nav>  -->
+    
+    <!-- Navigation Bar --
+<nav class="navbar">
+  <div class="brand"><h1>SNEHA</h1></div>
+  <button class="hamburger" id="hamburger">&#9776;</button>
+  <div id="nav-menu" class="nav-links"></div>
+</nav><!- -->
+
+<!-- Navigation Bar vers-02-->
+    <header class="navbar">
+      <div class="brand">SNEHA</div>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <div id="nav-menu" class="nav-links"></div>
+    </header>
+    
+    
+    <script>
+        // Navigation items with working folder-based links
+const navItems = [
+  { name: "Home", href: "../home/index.html", active: true },
+  { name: "Portfolio", href: "../portfolio/index.html", active: false },
+  { name: "About", href: "../about/index.html", active: false },
+  { name: "Contact Us", href: "../contact/index.html", active: false },
+];
+
+
+        // Render top and footer nav
+function renderNav(menuId) {
+  const menu = document.getElementById(menuId);
+  navItems.forEach((item) => {
+    const a = document.createElement("a");
+    a.href = item.href;
+    a.textContent = item.name;
+    a.className = item.active ? "active" : "";
+    menu.appendChild(a);
+  });
+}
+
+        // Init
+document.addEventListener("DOMContentLoaded", () => {
+  renderNav("nav-menu");
+ // renderNav("footer-menu");
+  // Toggle mobile navbar
+document.getElementById("hamburger").addEventListener("click", function () {
+  const navMenu = document.getElementById("nav-menu");
+  navMenu.classList.toggle("active");
+});
+});
+
+    </script>
+</body>
+</html>

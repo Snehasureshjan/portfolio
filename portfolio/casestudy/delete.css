@@ -1,0 +1,104 @@
+
+/*==================RESPONSIVENESS========================*/
+@media(min-width:769px){
+    .hero-img-resp{
+        display: none;
+    }
+    .hero-img{
+        display: block;
+        
+    }
+    
+    .ds-content-resp{
+        display: none;
+    }
+    .ds-content-span{
+        display: flex;
+    }
+    
+}
+
+@media(max-width:768px){
+
+img{
+    width:100%
+  }
+    body{
+        background-image: none;
+      
+    }
+    .bgimg{
+        display: block;
+        width:100%;       
+    }
+    section{
+        margin:0 1em;
+       /* padding: 0 2rem;*/
+        padding-left: 0; 
+        padding-right: 1em;
+        max-width: 768;
+        width: 100%;
+    }
+    .herotxt{
+        padding-right:40px;
+        
+    }
+    .ovrview-card{
+        width:100%;
+        
+    } 
+  .hero{
+           
+ }    
+    .hero-img{
+        display: none;
+    }
+    .hero-img-resp{
+        display: block;
+        width: 100%;
+    }
+    .ds-content-span{
+        display: none;
+    }
+    .ds-content-resp{
+        display: flex;
+    }
+   
+    .ps-container{     
+        justify-content: center;
+    }
+    .ps-txt{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .ps-container .card{
+        width: 80%
+    }
+    
+    
+    .persona-container{
+        flex-direction: column;
+    }
+    .persona-A,.persona-B{
+        width: 100%;
+    }
+    .personaA-col{
+        justify-content: space-between;
+    }
+    .pitem{
+    height:10em;
+    }
+    
+    .pbcomment p{
+    padding-top: 8px;
+    }    
+    
+    
+    .ds-tricolors{
+        justify-content: right;
+        padding-right: 4em;
+    }
+    
+    
+}

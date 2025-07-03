@@ -1,0 +1,155 @@
+
+
+ 
+/* Responsive styles */
+@media (max-width: 768px) {
+
+  body {
+  
+  /*background-image: url('../assets/images/bgmobile.png');
+  background-image: ;
+  background-repeat:repeat-y;*/
+  background-size: 0;
+  
+  }
+.profpic{
+      visibility: visible;
+      display: flex;
+      justify-content: center;
+  }
+  #propic2{
+  visibility: visible;
+      display: block;
+      width:80%;
+  }
+
+  .navbar {    
+    flex-direction: row;
+    position: relative;
+  }
+
+  .hamburger {
+    display: block;
+ transition: transform 0.3s ease;
+
+  }
+  .hamburger.active::before {
+  content: "\2715";
+  transform: rotate(180deg);
+  opacity: 1;
+
+}
+.hamburger::before {
+  content:"\2630";
+  display: inline-block;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+  
+  .navbar{
+      height:28px;
+  }
+  .nav-links {
+    margin: auto;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: -1rem;
+    background: #333333;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+    z-index: 10;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .nav-links a{
+      margin: 0 0 1rem;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  
+
+
+
+  #bio {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+ 
+  .status, .quotes {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .card{
+    text-align: center;
+    padding: 1rem;
+    width:75%;
+  }
+  
+   
+   
+   
+   
+   
+   
+   
+  #projectheading {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  .project-image{
+      width: 100%;
+  }
+  .more-projects {
+    justify-content: center;
+  }
+
+  .project-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .services{
+      flex-direction: column;
+      text-align: center;
+  }
+}
+
+
+
+/* === Mobile adjustments === *
+@media screen and (max-width: 768px) {
+  #bio {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+/*
+  .profpic img {
+    width: 200px;
+    margin-bottom: 1rem;
+  }*/
+}

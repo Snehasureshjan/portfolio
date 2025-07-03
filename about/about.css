@@ -1,0 +1,263 @@
+body {
+  margin: 0;
+  background-color: #181616;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 1.5rem;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #181616;
+  border-radius: 35px;
+  box-shadow: 0 5px 5px #f5f5f5;
+  padding: 1.5rem 2rem;
+  margin-bottom: 3rem;
+}
+
+.brand {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin-left: 1rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.nav-links a.active {
+  background-color: white;
+  color: #181616;
+}
+/* Hamburger button */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Default nav links style for desktop *//*
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}*/
+
+.intro {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.intro h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.content-section {
+  margin-bottom: 3rem;
+}
+
+.btn-outline,
+.btn {
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.btn-outline {
+  background: #181616;
+  color: white;
+  border: 1px solid white;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background: white;
+  color: #181616;
+  border: none;
+  margin-bottom: 1rem; 
+}
+.btn a{
+    color: #181616;
+    text-decoration: none;
+}
+.skills-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.skill-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.skill-card h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.skill-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skill-card li {
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.skill-card .dot {
+  width: 11px;
+  height: 8px;
+  background: #d9d9d9;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.cert-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.cert-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.cert-list .dot {
+  width: 11px;
+  height: 8px;
+  background: #d9d9d9;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.interests-text {
+  text-align: center;
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.email {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.footer {
+  margin-top: 5rem;
+  padding-top: 2rem;
+  border-top: 1px solid #444;
+  text-align: center;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.socials a {
+  margin: 0 0.5rem;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
+}
+
+.credit {
+  font-size: 0.9rem;
+  color: #bbb;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* ::::::::::RESPONSIVENESS:::::::::::: */
+@media (max-width:768px){
+
+.navbar {    
+    flex-direction: row;
+    position: relative;
+  }
+
+  .hamburger {
+    display: block;
+transition: transform 0.3s ease;
+
+  }
+  .hamburger.active::before {
+  content: "\2715";
+  transform: rotate(180deg);
+  opacity: 1;
+
+}
+.hamburger::before {
+  content:"\2630";
+  display: inline-block;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+  
+  .navbar{
+      height:28px;
+  }
+  .nav-links {
+    margin: auto;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: -1rem;
+    background: #333333;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+    z-index: 10;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .nav-links a{
+      margin: 0 0 1rem;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  
+  
+  .btndiv {
+      text-align: center;
+  }
+  .content-section{
+      display: flex;
+      flex-direction: column;
+  }
+}

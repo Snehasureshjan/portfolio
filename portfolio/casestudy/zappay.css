@@ -1,0 +1,357 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  
+  background-color: #0e0e0e;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  
+}
+/* Top links */
+.top-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  color: white;
+}
+
+.top-links a {
+  color: white;
+  text-decoration: none;
+ /* font-weight: 500;*/
+  transition: opacity 0.3s;
+}
+
+.top-links a:hover {
+  opacity: 0.7;
+}
+.btn {
+  margin-top: 20px;
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+/*......................................*/
+h1, h2, h3 {
+  font-weight: bold;
+  /*text-align: center;*/
+ /* margin-top: 40px;*/
+}
+
+section {
+  padding: 0 2rem 1.5rem;
+  max-width: 1280px;
+  margin: auto;
+ 
+}
+.hero-img-resp{
+    display: none;
+}
+.hero-img{
+    display: block;
+    width:550px;   
+    position: relative;   
+    top: 0;
+    right:0;
+    z-index:-999;   
+}
+.heroimgdiv{
+    padding-top: 0;
+}
+.herotxt{
+    width:600px;
+    padding-right: 20px;
+}
+.ovrview {
+  padding:0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+
+.hero h1{
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+}
+.hero p{
+    font-size: 20px;
+}
+/* ........ */
+.ovrview-card{
+border: 1px solid white;
+border-radius: 35px;
+padding: 20px;
+background: #1a1a1a;
+flex: 1;
+min-width: 250px;
+    width: 100%;
+    
+}
+.card {
+  border: 1px solid white;
+  border-radius: 35px;
+  padding: 20px;
+  background: #1a1a1a;
+  flex: 1;
+  min-width: 250px;
+}
+.card p{
+    padding-top: 2em;
+}
+/* ........pblm stmnt......... */
+.ps-container {
+  padding:0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: right;
+}
+.ps-container .card{
+  width: 700px; 
+  padding-top: 2em;
+  
+}
+.ps-img{
+    width:400px;
+    height: auto;
+}
+.psimg-div{
+    padding-right: 0;
+    
+}
+.ps-txt{
+    width: 750px;
+    padding-right: 0;
+    padding-top: 2em;
+}
+
+
+/* ................PERSONA.................... */
+
+.persona-container {
+  padding:1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-around;
+}
+.persona-A{
+    display:flex;       
+    width: 37%;
+}
+.personaA-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+}
+.pitem{
+    width: 75%;
+    height: 50%;
+    
+}
+.persona-B{
+    width: 60%;
+    
+}
+.pbcomment {
+  /*border-radius: 15px;*/
+  flex:1;
+  min-width: 250px;
+}
+
+
+/* ...............DESIGN...System.......... */
+
+.designsystem-card{
+  
+  padding: 20px;
+  
+  flex: 1;
+  min-width: 250px;
+}
+
+.ds-card{
+    display: flex;    
+    margin: 4em 0 0;
+}
+.ds-title{
+    text-align: right;
+    min-width:100px;
+    
+}
+.ds-content{
+    padding: 0 1em;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ds-content-resp , .ds-content-span{
+    padding: 0 1em;   
+  /*  display: flex; */      /*is in responsive code..*/
+    flex-direction: column;
+    justify-content: center;
+}
+
+.typog{
+    display: flex;
+    justify-content: space-between;
+    border-left: 2px solid white;
+    padding-left: 12px;
+}
+.inter{
+    font-size:4rem;
+    font-family: 'inter';
+}
+
+.ds-tricolors{ 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.ds-colors{
+    display: flex;
+    width:40%;
+    height: 4em;
+}
+.ds-colors div{
+    width:33%;
+    height: 4em;
+}
+.ds-card2{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+.typo-styles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  font-family: 'inter';
+  gap:1em;
+}
+
+.tytitle{
+    font-size: 24px;
+    font-weight: bold;
+}
+.tysub{
+    font-size: 18px;
+}
+.tybody{
+    font-size: 14px;
+}
+
+
+
+
+
+/*==================RESPONSIVENESS========================*/
+@media(min-width:769px){
+    .hero-img-resp{
+        display: none;
+    }
+    .hero-img{
+        display: block;
+        
+    }
+    
+    .ds-content-resp{
+        display: none;
+    }
+    .ds-content-span{
+        display: flex;
+    }
+    
+}
+
+@media(max-width:768px){
+
+img{
+    width:100%
+  }
+    body{
+        background-image: none;
+      
+    }
+    .bgimg{
+        display: block;
+        width:100%;       
+    }
+    section{
+        margin:0 1em;
+       /* padding: 0 2rem;*/
+        padding-left: 0; 
+        padding-right: 1em;
+        max-width: 768;
+        width: 100%;
+    }
+    .herotxt{
+        padding-right:40px;
+        
+    }
+    .ovrview-card{
+        width:100%;
+        
+    } 
+  .hero{
+           
+ }    
+    .hero-img{
+        display: none;
+    }
+    .hero-img-resp{
+        display: block;
+        width: 100%;
+    }
+    .ds-content-span{
+        display: none;
+    }
+    .ds-content-resp{
+        display: flex;
+    }
+   
+    .ps-container{     
+        justify-content: center;
+    }
+    .ps-txt{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .ps-container .card{
+        width: 80%
+    }
+    
+    
+    .persona-container{
+        flex-direction: column;
+    }
+    .persona-A,.persona-B{
+        width: 100%;
+    }
+    .personaA-col{
+        justify-content: space-between;
+    }
+    .pitem{
+    height:10em;
+    }
+    
+    .pbcomment p{
+    padding-top: 8px;
+    }    
+    
+    
+    .ds-tricolors{
+        justify-content: right;
+        padding-right: 4em;
+    }
+    
+    
+}

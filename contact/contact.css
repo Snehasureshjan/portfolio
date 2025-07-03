@@ -1,0 +1,274 @@
+body {
+  margin: 0;
+  background-color: #181616;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #181616;
+  border-radius: 35px;
+  box-shadow: 0 5px 5px #f5f5f5;
+  padding: 1.5rem 2rem;
+}
+
+.brand {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin-left: 1rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.nav-links a.active {
+  background: white;
+  color: #181616;
+}
+
+main {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.quote {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.btn-outline {
+  padding: 0.8rem 2rem;
+  border: 1px solid white;
+  border-radius: 30px;
+  background: #181616;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.btn-box {
+  text-align: left;
+  margin: 2rem 0 3rem 2rem;
+}
+
+.contact-form {
+  max-width: 950px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+ 
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: black;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 1.5rem;
+  border-radius: 40px;
+  border: none;
+  font-size: 1.5rem;
+  background: rgba(255, 255, 255, 0.4);
+  color: #181616;
+}
+
+.contact-form textarea {
+  height: 280px;
+  resize: none;
+}
+
+.btn-submit {
+  background: rgba(255, 255, 255, 0.9);
+  color: #181616;
+  font-weight: bold;
+  border-radius: 40px;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  border: none;
+}
+
+.available-badge {
+  margin-top: 3rem;
+  background: white;
+  color: #181616;
+  font-weight: bold;
+  border-radius: 35px;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+}
+
+.email {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/*
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}*/
+
+.footer {
+  margin-top: 5rem;
+  padding-top: 2rem;
+  border-top: 1px solid #444;
+  text-align: center;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.socials a {
+  margin: 0 0.5rem;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
+}
+
+.credit {
+  font-size: 0.9rem;
+  color: #bbb;
+  text-align: center;
+  margin-top: 1rem;
+}
+/* Hamburger button */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+ /* .navbar, .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }*/
+
+  .btn-box {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .quote {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .btn-submit {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .available-badge {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .email {
+    font-size: 1.2rem;
+  }
+
+/* ::::::::::More RESPONSIVENESS:::::::::::: */
+
+
+.navbar {    
+    flex-direction: row;
+    position: relative;
+  }
+
+  .hamburger {
+    display: block;
+transition: transform 0.3s ease;
+
+  }
+  .hamburger.active::before {
+  content: "\2715";
+  transform: rotate(180deg);
+  opacity: 1;
+
+}
+.hamburger::before {
+  content:"\2630";
+  display: inline-block;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+  
+  .navbar{
+      height:28px;
+  }
+  .nav-links {
+    margin: auto;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: -1rem;
+    background: #333333;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+    z-index: 10;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .nav-links a{
+      margin: 0 0 1rem;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  
+  
+  .btndiv {
+      text-align: center;
+  }
+  .content-section{
+      display: flex;
+      flex-direction: column;
+  }
+}
