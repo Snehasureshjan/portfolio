@@ -76,6 +76,30 @@ body {
   margin-bottom: 3rem;
 }
 
+.dwnloddiv{
+    display: flex;
+    justify-content: center;
+}
+.dwnlodbtn{
+	display:block;
+	margin-top: 50px;
+	width: fit-content;
+	border: 1px solid black;
+	box-shadow: #aaa 0px 2px 15px;
+	padding: 10px 20px;
+	border-radius: 10px;
+	text-decoration:none;
+	color:black;
+	background:#fff;
+	transition: background 0.5s, color 0.5s;
+}
+.dwnlodbtn:hover{
+	background: #333;
+	color:white;
+	border: none;
+	box-shadow: none;
+}
+
 .btn-outline,
 .btn {
   padding: 0.8rem 2rem;
