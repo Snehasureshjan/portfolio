@@ -4,7 +4,7 @@ body {
   color: #fff;
   margin: 0;
   padding: 0;
-  background-image: url('../images/bg.png');
+  background-image: url('../images/resized-images/bgv2.png');
   background-size: contain;
   background-repeat: no-repeat;
   
@@ -85,6 +85,49 @@ margin-right: 0;
   cursor: pointer;
 }
 
+/* ..................KEYMETRICS...................... */
+
+.line-area{
+    display: flex;
+    flex-direction: column;
+  /*  justify-content: space-around;*/
+    margin-bottom: 1rem;
+    font-size: 14px;
+}
+.metric-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.bar {
+  height: 6px; 
+  border: 1px solid #fff;
+  background: #181616;
+  color: #fff;
+  border-radius: 20px;
+  
+}
+.bars {
+  height: 100%;
+/*  border: 1px solid #fff;*/
+  background: #fff;
+  color: #fff;
+  border-radius: 20px;
+  z-index: 999;
+  
+}
+.bar1{    
+    width: 62%;
+}
+.bar2{
+    width: 70%;
+}
+.bar3{
+    width: 57%;
+}
+.bar4{
+    width: 55%;
+}
 
 /*....................PROJECTOVERVIW...................*/
 .overview {
@@ -118,7 +161,7 @@ margin-right: 0;
 .card {
   border: 1px solid white;
   border-radius: 35px;
-  padding: 20px;
+  padding: 16px;
   background: #1a1a1a;
   flex: 1;
   min-width: 250px;
@@ -231,7 +274,33 @@ margin-right: 0;
   text-align: center;
 }
 
-
+.tagsdiv{
+  display: flex;   
+  margin-top: 8px;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+.tag{
+    background-color: #464646;
+    font-size:0.8rem ;
+    margin: 0 5px 0.5rem;
+    color: whitesmoke;
+    padding: 4px 8px;
+    border-radius: 20px;
+}
+.btn-outline {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #fff;
+  background: #181616;
+  color: #fff;
+  border-radius: 20px;
+  
+}
+.uipic{
+    width: 532px ;
+    height: 334px;
+}
 /*==================RESPONSIVENESS========================*/
 
 @media(max-width:768px){
@@ -287,5 +356,9 @@ img{
       .cellD { order: 6; }
       .cellF { order: 7; }
       .cellH { order: 8; }
+    }
+    .uipic{
+        width: 100%;
+        height:auto;
     }
 }
