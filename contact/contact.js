@@ -1,8 +1,8 @@
 const navItems = [
-  { name: "Home", href: "../home/index.html", active: false },
-  { name: "Portfolio", href: "../portfolio/index.html", active: false },
+//{ name: "Home", href: "../home/index.html", active: false },
   { name: "About", href: "../about/index.html", active: false },
-  { name: "Contact Us", href: "../contact/index.html", active: true },
+  { name: "Portfolio", href: "../portfolio/index.html", active: false },
+  { name: "Contact", href: "../contact/index.html", active: true },
 ];
 
 // Render top & footer nav
