@@ -19,16 +19,110 @@
   justify-content: center;
   margin: auto;
 }
-      .loader { width: 48px; height: 48px; border: 5px solid #555; border-bottom-color: #fff; border-radius: 50%; display: inline-block; box-sizing: border-box; animation: rotation 1s linear infinite; } @keyframes rotation { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } } 
+      .loader { width: 48px; height: 48px; border: 5px solid #555; border-bottom-color: #fff; border-radius: 50%; display: inline-block; box-sizing: border-box; animation: rotation 1s linear infinite; } @keyframes rotation { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+      <!-- fade-open animation --> 
+      body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Homepage content */
+    .home {      
+      height: 100vh;      
+      opacity: 0;
+      transition: opacity 1s ease-in-out 3s;
+    }
+
+    /* Overlay container */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column; /* top & bottom panels */
+      z-index: 10;
+    }
+
+    .panel {
+      flex: 1;
+      background: whitesmoke;
+      transition: transform 2s ease-in-out;
+    }
+
+    .panel.top {
+      transform-origin: top center;
+    }
+    .panel.bottom {
+      transform-origin: bottom center;
+    }
+
+    /* Girl image in the middle */
+    .girl {
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      transform: translateY(-50%);
+      width: 200px;
+      z-index: 11;
+      animation: moveRight 2s ease-in-out forwards, fadeOut 1s ease-in-out 2.5s forwards;
+    }
+
+    /* Girl moves left to right */
+    @keyframes moveRight {
+      to {
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    /* Girl fades out */
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    /* Panels open animation */
+    .overlay.open .panel.top {
+      transform: translateY(-100%);
+    }
+    .overlay.open .panel.bottom {
+      transform: translateY(100%);
+    }
+
+    /* Show homepage after animation */
+    .show-home {
+      opacity: 1;
+    }
   </style>
 </head>
 <body>
-  <div id="loadingScreen">
+    
+<!--    <div id="loadingScreen">
       <h1>LOADING</h1>
       <h1><span class="loader"></span></h1>   
-  </div>
-   
+  </div> -->
   
+
+
+
+  <!-- Overlay animation -->
+  <div class="overlay">
+    <div class="panel top"></div>
+    <div class="panel bottom"></div>
+    <img src="../assets/images/girlanimation.png" alt="Girl Opening" class="girl"> <!-- Replace with your image -->
+  </div>
+
+
+<div class="home">
+    
   <div class="container">
     <!-- Navigation Bar -->
     <header class="navbar">
@@ -316,12 +410,27 @@
      </footer>
   </div>
 
+
+</div>
+
+<!-- internal javascript -->
   <script src="about.js"></script>
-  <script>
+  <!-- <script>
       var loadingScreen = document.getElementById("loadingScreen");
       window.addEventListener('load', function() {
   loadingScreen.style.display = 'none';
 })
+  </script> -->
+  <script>
+    window.addEventListener("load", () => {
+      const overlay = document.querySelector(".overlay");
+      const home = document.querySelector(".home");
+
+      setTimeout(() => {
+        overlay.classList.add("open");
+        home.classList.add("show-home");
+      }, 2000); // Panels open after girl moves
+    });
   </script>
 </body>
 </html>
