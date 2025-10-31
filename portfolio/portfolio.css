@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #181616;
+ background-color: #0a0a0a;
   color: white;
   font-family: 'Inter', sans-serif;
 }
@@ -105,16 +105,61 @@ body {
 
 
 /*...............PORTFOLIO.................*/
-
+#headstiker{
+    display: none;
+}
 .page-header {
+background-image: url('../assets/images/headstiker.png');
+background-repeat: no-repeat;
+background-size: 100%;
+background-position: right center;
+  
   text-align: center;
   padding: 3rem 1rem 2rem;
 }
 
 .page-header h1 {
-  font-size: 3rem;
+  
+  font-size: 5rem;
   margin-bottom: 0.5rem;
+  
 }
+
+.page-header .tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 16px 6px 12px; /* extra left padding for dot */
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 4px;
+      position: relative;
+      width: fit-content;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    /* white dot */
+    .page-header .tag::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: white;
+      border-radius: 50%;
+      position: absolute;
+      left: 6px;
+    }
+
+    /* Different colors */
+    .page-header .blue {
+      background: #2563eb; /* blue */
+      transform: rotate(-10deg);
+    }
+
+    .page-header .green {
+      background: #16a34a; /* green */
+      transform: rotate(5deg);
+    }
+
 
 .page-header p {
   max-width: 600px;
@@ -183,7 +228,7 @@ body {
   display: flex;
   gap: 1rem;
   overflow-x: auto;
-  padding: 1rem 0;
+  padding: 1rem 0;    
   
  /* height:200px;*/
 }
@@ -191,7 +236,7 @@ body {
 .card {
   border: 1px solid white;
   min-width: 250px;
-  max-width: 300px;
+  max-width: 32%;
   background: #1e1e1e;
   border-radius: 10px;
   overflow: hidden;
@@ -240,13 +285,17 @@ body {
   color: #ccc;
 }
 
+.card-body .btnsdiv {
+    display: flex;
+    justify-content: space-between;
+}
 .card-body button {
   margin-top: auto;
   background: transparent;
   color: #fff;
   border: 1px solid #fff;
   padding: 0.3rem 0.8rem;
-  border-radius: 20px;
+  border-radius: 5px;
   cursor: pointer;
 }
 .card-body a{
@@ -352,5 +401,15 @@ body {
   }
   .nav-links.active {
     display: flex;
+  }
+  #headstiker{
+      display: block;
+  }
+  .page-header {
+      background-image: none;
+  }
+  .page-header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
   }
 }
