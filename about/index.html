@@ -5,8 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About - Sneha</title>
   <link rel="stylesheet" href="about.css" />
+  <style>
+      #loadingScreen {
+
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  background-color: #181616;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+      .loader { width: 48px; height: 48px; border: 5px solid #555; border-bottom-color: #fff; border-radius: 50%; display: inline-block; box-sizing: border-box; animation: rotation 1s linear infinite; } @keyframes rotation { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } } 
+  </style>
 </head>
 <body>
+  <div id="loadingScreen">
+      <h1>LOADING</h1>
+      <h1><span class="loader"></span></h1>   
+  </div>
+   
+  
   <div class="container">
     <!-- Navigation Bar -->
     <header class="navbar">
@@ -15,44 +37,256 @@
       <div id="nav-menu" class="nav-links"></div>
     </header>
 
-    <!-- About Text -->
-    <main>
+
+<div class="profpic">
+    <img id="propic2" src="../assets/images/mainpic.png" alt="">  
+  </div>
+<div id="bio">
+   <div style="text-align:center;width:40%;background-color:yelow">
+       <img id="mainpic" width="100%" src="../assets/images/mainpic.png" alt="">
+   </div>  
+   <div id="hero-box">       
+    <div class="hero-text">  
+        
+        <span class="colortags">
+        <div class="maintag green">Open to Work</div> 
+        <br><br>
+        <div class="maintag blue">UI/UX Designer</div>
+        </span>
+        
+        
+           <h1>Hi, I am <br id="mainbr"> SNEHA SURESH</h1>                   
+      <p>
+        With passion for design and creativity,
+        and a <br>desire to solve real world problems
+        and make <br>everyday experiences better.
+       
+      <div class="dwnlodiv"><strong><a href="./Sneha_Resume.pdf" download class="dwnlodbtn" >Download Resume</a></strong></div>    
+    </div>
+      </p>
+   </div>
+    
+</div>
+
+
+
+    <!-- About Text --
+    
       <section class="intro">
-        <h1>ABOUT SNEHA</h1>
-        <p>
+        <h1>Hi, I am SNEHA SURESH</h1>
+        <!--<p>
           As an MCA student passionate UI/UX designer and creative visual artist.<br>
           With a strong eye for detail and a love for clean, user-friendly design,<br>
           I aim to craft experiences that truly connect with people.<br>
           Let's build something beautiful together.
+        </p> --
+        <p>
+            With passion for design and creativity, and a desire to solve real-world problems and make every day experiences better.
         </p>
         <div class="dwnloddiv"><strong><a href="./Sneha_Resume.pdf" download class="dwnlodbtn" >Download Resume</a></strong></div>
       </section>
+ -->
 
-      <!-- Skills -->
+
+                <!-- What I Do section -->
+                
+<div class="btndiv" style="text-align:center"><div class="btn-outline" style="border-radius:5px;font-size:1.5rem;color:black;background-color:white">
+    <!--  
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none"><path fill="#c77f67" stroke="#191919" stroke-linecap="round" stroke-linejoin="round" d="M21.09 3.864a.957.957 0 0 0-.957-.957H14.92a3.186 3.186 0 0 0-5.836 0H3.867a.957.957 0 0 0-.956.957v18.18a.957.957 0 0 0 .956.956h16.266a.957.957 0 0 0 .957-.957z" stroke-width="1"/><path fill="#e3e3e3" d="M5.781 20.13h8.688a1.91 1.91 0 0 0 1.453-.67l1.836-2.142c.297-.347.46-.788.462-1.244V5.778H5.78z"/><path fill="#fff" d="M5.781 18.204L18.21 5.773H5.781z"/><path stroke="#191919" stroke-linecap="round" stroke-linejoin="round" d="M5.781 20.13h8.688a1.91 1.91 0 0 0 1.453-.67l1.836-2.142c.297-.347.46-.788.462-1.244V5.778H5.78zM15.35 8.648h-4.306m-2.393 0h.479m6.22 3.827h-4.306m-2.393 0h.479m4.784 3.827h-2.87m-2.393 0h.479" stroke-width="1"/></g></svg>
+    -->
+    
+   💡What I Do</div>
+</div>
+
+<main class="wrap skill-card">
+<div class="whatido">   
+ <div class="cards-grid">
+     
+  <!-- Row 1: 3 cards -->
+  <div class="card angle-1 research">
+    <div class="card-inner">
+      <h3>User Research
+      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none"><path fill="#ffbc44" d="m2.848 16.615l-1.39 5.927l5.927-1.39l.232-.232l-4.536-4.536z"/><path fill="#ffdda1" d="M5.349 18.651L3.08 16.383l-.233.232l-1.39 5.927z"/><path stroke="#191919" stroke-linecap="round" stroke-linejoin="round" d="m2.848 16.615l-1.39 5.927l5.927-1.39l.232-.232l-4.536-4.536z" stroke-width="1"/><path fill="#ffef5e" d="m3.081 16.384l4.536 4.536L20.049 8.49l-4.53-4.547z"/><path fill="#fff9bf" d="M15.53 3.955L3.071 16.371l2.264 2.272L17.793 6.227z"/><path stroke="#191919" stroke-linecap="round" stroke-linejoin="round" d="m3.081 16.384l4.536 4.536L20.049 8.49l-4.53-4.547z" stroke-width="1"/><path fill="#e4f1f5" stroke="#191919" stroke-linecap="round" stroke-linejoin="round" d="m16.82 2.643l-1.301 1.3l4.53 4.546l1.31-1.31z" stroke-width="1"/><path fill="#ff808c" d="M22.005 6.533a1.834 1.834 0 0 0 0-2.593l-1.946-1.944a1.83 1.83 0 0 0-2.593 0l-.646.647l4.538 4.536z"/><path fill="#ffbfc5" d="m21.032 2.967l-.973-.972a1.83 1.83 0 0 0-2.593 0l-.646.648l2.269 2.268z"/><path stroke="#191919" stroke-linecap="round" stroke-linejoin="round" d="M22.005 6.533a1.834 1.834 0 0 0 0-2.593l-1.946-1.944a1.83 1.83 0 0 0-2.593 0l-.646.647l4.538 4.536z" stroke-width="1"/></g></svg>
+      </h3>
+      <p>Turn insights into design decisions</p>
+    </div>
+    <div class="tag top">Interviews</div>
+    <div class="tag bottom">Surveys</div>
+  </div>
+
+  <div class="card angle-2 design">
+    <div class="card-inner">
+      <h3>UI Design
+      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 128 128"><path fill="#ac5810" d="M77.37 19.32C46.83 3.21 19.03 14.69 9.01 30.38c-3.28 5.13-5.6 14.46-5.51 21.86c.18 15.23 8.61 32.2 26.8 49.32c22.38 21.06 45.22 19.22 52.48 17.45c9.14-2.23 15.27-4.13 14.33-12.65c-.12-1.12-1.08-3.15-2.53-4.04c-4.65-2.82-14.36-4.29-18.93-11.08c-6.64-9.89 1.62-10.39 9.53-6.16c8.47 4.53 13.31 7.36 21.81 6.58c6.23-.57 15.29-4.33 16.52-14.84c1.1-9.51-12.78-39.9-46.14-57.5M89.84 71c-2.34 3.56-8.12 2.34-11.91-1.02s-4.28-8.96-1.82-11.16c2.5-2.23 7.2-1.72 10.99 1.64c3.78 3.37 4.57 7.74 2.74 10.54"/><path fill="#f2a259" d="M78.71 15.69C48.17-.42 20.3 12.04 10.28 27.73C.25 43.43 4.61 72.5 31.63 97.93c22.38 21.06 45.22 19.22 52.48 17.45c9.14-2.23 15.59-6.58 11.57-12.13c-2.77-3.83-12.7-6.72-18.69-15.64c-6.64-9.89 1.62-10.39 9.53-6.16c8.47 4.53 13.31 7.36 21.81 6.58c6.23-.57 15.65-5.39 15.37-15.13c-.29-9.57-11.63-39.6-44.99-57.21m14.06 55.03c-2.85 3.08-8.92 2.24-13.56-1.86c-4.63-4.11-6.08-9.93-3.23-13c2.85-3.08 8.92-2.24 13.56 1.86s6.08 9.93 3.23 13"/><path fill="#eee" d="M47.62 84.66c1.15-2.94 9.33-6.16 16.85-.81c2.11 1.5 4.75 5.32 4.48 10.12c-.88 15.68-26.61 4.22-21.33-9.31"/><path fill="#2686c6" d="M23.73 58.07c2.63-4.2 9.02-4.68 14.61-1.05c4.98 3.23 9.14 11.18 3 16.38c-3.29 2.79-8.98 1.06-12.49-1.63c-4.26-3.25-7.95-9.18-5.12-13.7"/><path fill="#ffee58" d="M57.67 21.42c.81-3.33 6.46-3.9 10.46-2.41c6.91 2.58 10.04 9.42 7.49 13.23c-3.73 5.57-11.86 3.66-14.94.47c-5.23-5.4-3.69-8.5-3.01-11.29"/><path fill="#7cb342" d="M97.71 37.72c5.54 2.52 6.26 6.51 5.2 9.42c-.66 1.8-2.01 4.27-4.77 4.49c-4.67.38-5.32-3.48-8.65-4.54c-2.8-.89-3.94-4.72-2.84-7.29c1.02-2.37 4-5.3 11.06-2.08"/><path fill="#b0b0b0" d="M66.97 96.96c-1.38 1.25-6.17 2.79-12.25-1.01c-2.06-1.29-4.03-3.16-5.14-5.96c-.87-2.2-.68-4.32-.29-5.26c1.12-2.71 2.83-3.21 2.83-3.21c-1.72-.12-4.97 2.16-5.51 5.15c-.17.94-1.38 6.82 6.41 12.15c6.71 4.6 16.63 4.17 15.98-5.09c-.3 1.14-1.15 2.44-2.03 3.23"/><path fill="#01579b" d="M44.26 65.72c-.19 3.57-4.37 5.45-6.7 5.46c-6.59.01-12.51-4.13-12.92-11.5c-.07-1.32.58-3.23.58-3.23c-.87.37-2.1 2.25-2.36 3.31c-1.54 6.36 4.87 13.77 11.62 15.27c3.42.76 7.73-.41 9.3-3.47c1.12-2.18.9-4.05.48-5.84"/><path fill="#df7f14" d="M67.32 32.72c-4.48-.51-6.96-3.44-7.61-4.11c-1.78-1.86-2.88-3.67-2.24-6.35c.2-.86.69-1.96 1.29-2.58c-.73.24-1.91 1.81-2.28 2.66c-.38.85-1.76 4.04 1.2 7.97c1.83 2.44 5.02 5.19 9.74 5.85c3.35.47 5.75-.73 7.75-2.68c1.36-1.33 1.96-4.33 1.15-5.88c.13 1.13-1.94 5.93-9 5.12"/><path fill="#558b2f" d="M104.17 44.85c-.41-1.51-1.58-3.08-1.7-3.16c.51.98 1.52 3.92-.6 6.78c-1.07 1.44-4.29 3.21-8.09.13c-1.12-.91-2.02-1.81-4.04-2.55c-5.13-1.89-2.89-7.11-1.11-8.73c-1.4.73-2.67 2.04-3.2 4.04c-.74 2.79 1.09 5.71 3.87 7.11c3.16 1.59 4.18 4.66 8.51 4.66c.22 0 .45-.01.7-.03c2.92-.25 4.15-1.38 5.04-2.76c1.09-1.72 1.12-3.67.62-5.49"/><path fill="#f44336" d="M25.82 25.79c2.28-2.25 6.25-4.63 12.06-1.6c3.5 1.82 7.57 3.96 5.73 11.36c-1.14 4.59-7.82 7.02-13.4 1.91c-2.21-2.02-10.61-5.53-4.39-11.67"/><path fill="#c62828" d="M44.94 34.56c.07-1.75-.83-3.88-1.14-4.6c.05 1.05.96 3.7-3.21 7.21c-1.45 1.22-4.08 2.15-6.95 1.02c-1.47-.58-3.58-3.01-5.09-3.62c-5.61-2.26-3.19-8.27-2.4-9.09c-1.27.89-2.35 2.31-2.75 4.38c-.52 2.71-.04 5.27 3.68 8.2c10.56 8.33 13.8 3.31 14.95 2.03c1.45-1.56 2.83-3.6 2.91-5.53"/><path fill="#fff" d="M65.74 19.36c-1.47-.69-5.67-.49-6.48 3.01c-.49 2.1 1.05 4.23 2.5 3.98c1.65-.28.77-2.85 1.76-3.58c1.51-1.1 4.28-2.44 2.22-3.41m-30.98 5.1c-1.45-.96-6.08-.97-7.47 2.58c-.84 2.13.47 4.6 2.04 4.56c1.79-.04.93-2.15 2.42-3.49c1.88-1.69 5.04-2.31 3.01-3.65m-.69 32.04c-1.37-.87-5.43-1.21-7.11 1.97c-1.23 2.34.46 4.92 1.93 4.85c1.67-.08 1.11-2.74 2.18-3.34c1.63-.91 4.92-2.26 3-3.48M57.4 83.13c-1.47-.69-5.67-.49-6.48 3.01c-.49 2.1 1.05 4.23 2.5 3.98c1.65-.28.77-2.85 1.76-3.58c1.5-1.1 4.27-2.44 2.22-3.41m37.68-45.08c-1.32-.94-5.49-1.49-6.91 1.81c-.85 1.98.28 4.35 1.75 4.36c1.67.01 1.26-2.67 2.37-3.21c1.67-.81 4.64-1.64 2.79-2.96"/></svg>
+       </h3>
+      <p>Create design systems for consistency</p>
+    </div>
+    <div class="tag left">Figma</div>
+    <div class="tag right">pixel perfect</div>
+  </div>
+  
+  <div class="card angle-3 thinking">
+    <div class="card-inner">
+      <h3>Design Thinking
+      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.3em" viewBox="0 0 24 24"><path fill="#000" d="M13 3C9.23 3 6.19 5.95 6 9.66l-1.92 2.53c-.24.31 0 .81.42.81H6v3c0 1.11.89 2 2 2h1v3h7v-4.69c2.37-1.12 4-3.51 4-6.31c0-3.86-3.12-7-7-7m1 11h-2v-1h2zm1.6-4.5a3 3 0 0 1-1.1 1.08V12h-3v-1.42c-1.43-.83-1.93-2.66-1.1-4.08s2.67-1.94 4.1-1.12s1.93 2.67 1.1 4.12"/></svg>
+      </h3>
+      <p>Empathize with user needs</p>
+    </div>
+    <div class="tag top">ideals</div>
+    <div class="tag bottom">creative</div>
+  </div>
+
+  <div class="card angle-4 ai">
+    <div class="card-inner">
+      <h3>Human-Centered AI
+      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none"><path fill="#ffbc44" d="M21.087 6.71v15.334a.957.957 0 0 1-.956.956H3.87a.956.956 0 0 1-.957-.956V1.957c0-.529.428-.957.957-.957h11.507q.467 0 .927.086v3.74c0 .528.429.957.957.957H21q.086.46.086.927"/><path fill="#ffdda1" d="M16.64 5.553L2.912 19.289V1.957c0-.529.428-.957.957-.957h11.507q.467 0 .927.086v3.74a1 1 0 0 0 .335.727"/><path fill="#fff" d="M21 5.783h-3.74a.956.956 0 0 1-.956-.957v-3.74a5.67 5.67 0 0 1 4.697 4.697"/><path stroke="#191919" stroke-linecap="round" stroke-linejoin="round" d="M20.13 23a.957.957 0 0 0 .957-.956V6.72A5.714 5.714 0 0 0 15.372 1H3.87a.957.957 0 0 0-.957.957v20.087c0 .528.428.956.957.956z" stroke-width="1"/><path stroke="#191919" stroke-linecap="round" stroke-linejoin="round" d="M16.304 1.077v3.75c0 .527.429.956.957.956h3.75M8.652 18.217v-4.304a1.435 1.435 0 1 1 2.87 0v4.304m-2.87-2.869h2.87m2.87-2.87v5.74m-.957-.001h1.913m-1.913-5.739h1.913" stroke-width="1"/></g></svg>
+      </h3>
+      <p>Bridge AI with everyday experiences</p>
+    </div>
+    <div class="tag tr">empathy</div>
+    <div class="tag bl">simplify</div>
+  </div>
+
+  <!-- Row 2: next 3 cards -->
+  <div class="card angle-5 wireframes">
+    <div class="card-inner">
+      <h3>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="orange" fill-rule="evenodd" d="M9 12H6.732a2 2 0 1 1 0-2H9V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-2zm2 0v7h8V5h-8v5h2.268a2 2 0 1 1 0 2z"/></svg>
+         Wireframes & Prototypes
+      </h3>
+      <p>Interactive flows before development</p>
+    </div>
+    <div class="tag tl">structure</div>
+    <div class="tag bottom">prototype</div>
+  </div>
+
+  <div class="card angle-6 strategy">
+    <div class="card-inner">
+      <h3>UX Strategies
+      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16"><path fill="#6f008b" d="M8 0q.552.001 1.09.074c.337.047.499.424.324.716L9.4.814a.52.52 0 0 1-.517.243A6.995 6.995 0 0 0 1.003 8c0 3.87 3.13 7 7 7a6.995 6.995 0 0 0 6.944-7.88a.52.52 0 0 1 .243-.517l.022-.014c.292-.175.67-.013.716.324q.075.532.075 1.09c0 4.42-3.58 8-8 8s-8-3.58-8-8s3.58-8 8-8z"/><path fill="#6f008b" d="M8 4c.177 0 .253.211.128.336l-.592.592a.7.7 0 0 1-.312.173a3 3 0 0 0-2.22 2.9c0 1.66 1.34 3 3 3c1.39 0 2.56-.944 2.9-2.22a.7.7 0 0 1 .173-.312l.592-.592c.126-.126.337-.05.337.128c0 2.21-1.79 4-4 4s-4-1.79-4-4s1.79-4 4-4z"/><path fill="#6f008b" d="M12.6.008a.5.5 0 0 1 .405.395l.435 2.17l2.17.435a.5.5 0 0 1 .159.919l-2.5 1.5a.5.5 0 0 1-.257.071h-1.79l-2.35 2.35a.5.5 0 0 1-.707-.707l2.35-2.35v-1.79l.005-.067a.5.5 0 0 1 .066-.19l1.5-2.5l.044-.062A.5.5 0 0 1 12.6.01z"/></svg>
+      </h3>
+      <p>Align design with business goals</p>
+    </div>
+    <div class="tag ucorner">userflow</div>
+    <div class="tag bcorner">usability</div>
+  </div>
+  
+</div>
+</div>
+
+  </main>
+
+
+      <!-- Certifications -->
+      
+      <section class="content-section">
+        
+        <div class="btndiv" style="text-align:center">
+            <div class="btn-outline" style="border-radius:5px;font-size:1.5rem;color:black;background-color:white">🏅Certifications</div>
+        </div>
+        
+        <div class="wrap skill-card">
+            <div class="certifications">
+               <ul id="cert-list" class="cert-list"></ul>
+            </div>
+        </div>
+      </section>
+
+
+
+   <!-- Services -->
+    <section class="services">
+     
+      <div class="btndiv" style="text-align:center"><button class="btn-outline" style="border-radius:5px;font-size:1.5rem;color:black;background-color:white">
+          
+         💼 My Services</button>
+</div>
+      <div id="services-list"></div>
+    </section>
+    
+    
+   <!-- Skills -->
+<!-- 
       <section class="content-section">
         <div class="btndiv"><button class="btn-outline">Skills</button></div>
         <div id="skills-grid" class="skills-grid"></div>
       </section>
+ -->      
+      
 
-      <!-- Certifications -->
-      <section class="content-section">
-        <div class="btndiv"><button class="btn-outline">Certifications</button></div>
-        <ul id="cert-list" class="cert-list"></ul>
-      </section>
+<!-- ...Education... -->
+<!--  
+<section class="content-section">  
+    <div class="btndiv" style="text-align:center"><div class="btn-outline" style="border-radius:5px;font-size:1.5rem;color:black;background-color:white">Education</div>
+</div>
+<div class="wrap skill-card">        
+ 
+ <div class="edu-section">
+    
+  <div class="edurow_one">      
+     <div class="educard rotate-left educard_one">
+      <div class="educard-top">        
+      <ul>            
+      <li>Master of Computer Applications (MCA)</li>
+      <li>College of Engineering</li>
+      <li>Chengannur, Kerala</li>
+      <li>80.03%</li>
+      </ul>
+      </div>
+      <div class="educard-bottom">       
+      <b>2025</b>
+      </div>
+     </div>
+    
+     <div class="educard rotate-left educard_three">
+      <div class="educard-top">
+      <ul>
+      <li>12th Computer Science</li>
+      <li>Pope Pius Higher Secondary School</li>
+      <li>Kattanam, Kerala</li>
+      <li>75%</li>
+      </ul>
+      </div>
+      <div class="educard-bottom">       
+      <b>2020</b>
+      </div>
+     </div>  
+  </div>
+  <div class="edurow_two">
+     <div class="educard rotate-right educard_two">
+      <div class="educard-top">
+      <ul>
+      <li>B.Sc Computer Science</li>
+      <li>University Institute of Technology</li>
+      <li>Adoor, Kerala</li>
+      <li>80.03%</li>
+      </ul>
+      </div>
+      <div class="educard-bottom">
+      <b>2023</b>
+      </div>
+     </div>
+  </div>
 
-      <!-- Interests -->
-      <section class="content-section">
-        <div class="btndiv"><button class="btn-outline">Interests</button></div>
-        <p class="interests-text">
-          Designing, Travelling, Photography, Continuous Self Learning, Exploring New Trends
-        </p>
-      </section>
+ </div>
 
-      <!-- Contact -->
+</div>
+</section>
+ -->
+
+      
+<div class="btndiv" style=" text-align:center;"><div class="btn-outline" style="border-radius:5px;font-size:1.5rem;color:black;background-color:white;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1em" viewBox="0 0 2048 2048"><path fill="#0685f9" d="M1636 693q65 33 117 81t90 108t57 128t20 142h-128q0-79-30-149t-83-122t-122-82t-149-31q-79 0-149 30t-122 83t-82 122t-31 149q0 91-41 173t-115 136q65 33 117 81t90 108t57 128t20 142h-128q0-79-30-149t-83-122t-122-82t-149-31q-79 0-149 30t-122 83t-82 122t-31 149H128q0-73 20-141t57-128t89-108t118-82q-73-54-114-136t-42-173q0-79 30-149t83-122t122-82t149-31q91 0 173 41t136 115q38-75 97-134t134-97q-73-54-114-136t-42-173q0-79 30-149t83-122t122-82t149-31q79 0 149 30t122 83t82 122t31 149q0 91-41 173t-115 136m-996 715q52 0 99-20t81-55t55-81t21-100q0-52-20-99t-55-81t-82-55t-99-21q-53 0-99 20t-81 55t-55 82t-21 99q0 53 20 99t55 81t81 55t100 21m512-1024q0 53 20 99t55 81t81 55t100 21q52 0 99-20t81-55t55-81t21-100q0-52-20-99t-55-81t-82-55t-99-21q-53 0-99 20t-81 55t-55 82t-21 99"/></svg>
+   Follow me</div>
+</div>
+<div style="text-align:center"><h3>Available for work</h3></div>
+      <!-- Contact --
       <section class="contact">
         <button class="btn"><a href="../contact/index.html">Available for work</a></button>
         <p class="email">snehasureshjan23@gmail.com</p>
       </section>
+       -->
     </main>
 
     <!-- Footer -->
@@ -83,5 +317,11 @@
   </div>
 
   <script src="about.js"></script>
+  <script>
+      var loadingScreen = document.getElementById("loadingScreen");
+      window.addEventListener('load', function() {
+  loadingScreen.style.display = 'none';
+})
+  </script>
 </body>
 </html>

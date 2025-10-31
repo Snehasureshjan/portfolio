@@ -1,9 +1,9 @@
 // Navigation links
 const navItems = [
-  { name: "Home", href: "../home/index.html", active: false },
-  { name: "Portfolio", href: "../portfolio/index.html", active: false },
+//1  { name: "Home", href: "../home/index.html", active: false },
   { name: "About", href: "../about/index.html", active: true },
-  { name: "Contact Us", href: "../contact/index.html", active: false },
+  { name: "Portfolio", href: "../portfolio/index.html", active: false },
+  { name: "Contact", href: "../contact/index.html", active: false },
 ];
 
 // Skills
@@ -13,7 +13,7 @@ const skillsData = [
     skills: ["HTML", "CSS", "Python"],
   },
   {
-    category: "Fronend", // kept original typo
+    category: "Frontend", // kept original typo
     skills: ["Figma", "Adobe xd", "Bootsrap"], // kept original typo
   },
   {
@@ -30,6 +30,34 @@ const certifications = [
   "Python Workshop – Conducted by Kleem Gotbay Media Infotech Pvt. Ltd.",
 ];
 
+//MY.SERVICES...
+const services = [
+  {
+    id: "01",
+    title: "UI/UX Design",
+    description:
+      "I specialize in crafting intuitive and visually appealing user interfaces for mobile apps and websites...",
+  },
+  {
+    id: "02",
+    title: "Mobile App & Web Design",
+    description:
+      "From wireframes to interactive prototypes, I design stunning mobile app screens and responsive website layouts...",
+  },
+  {
+    id: "03",
+    title: "Poster & Visual Design",
+    description:
+      "I create eye-catching posters, social media banners, and promotional graphics...",
+  },
+];
+
+
+
+//functions,rendering,etc..
+
+
+
 // Render nav
 function renderNav(menuId) {
   const menu = document.getElementById(menuId);
@@ -39,6 +67,25 @@ function renderNav(menuId) {
     a.textContent = item.name;
     a.className = item.active ? "active" : "";
     menu.appendChild(a);
+  });
+}
+
+// Render Services
+
+function renderServices() {
+  const container = document.getElementById("services-list");
+  services.forEach((service) => {
+    const card = document.createElement("div");
+    card.className = "service-card";
+
+    const title = document.createElement("strong");
+    title.textContent = `${service.id}. ${service.title}`;
+    const desc = document.createElement("p");
+    desc.textContent = service.description;
+
+    card.appendChild(title);
+    card.appendChild(desc);
+    container.appendChild(card);
   });
 }
 
@@ -89,7 +136,8 @@ function renderCerts() {
 document.addEventListener("DOMContentLoaded", () => {
   renderNav("nav-menu");
  // renderNav("footer-menu");
-  renderSkills();
+  //renderSkills();
+  renderServices();
   renderCerts();
   // Toggle mobile navbar
 const ham=document.getElementById("hamburger");
