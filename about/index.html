@@ -34,7 +34,7 @@
     .home {      
       height: 100vh;      
       opacity: 0;
-      transition: opacity 1s ease-in-out 3s;
+      transition: opacity 1s ease-in-out 1s;
     }
 
     /* Overlay container */
@@ -47,12 +47,13 @@
       display: flex;
       flex-direction: column; /* top & bottom panels */
       z-index: 10;
+      animation:overlayOut 10s forwards;
     }
 
     .panel {
       flex: 1;
       background: whitesmoke;
-      transition: transform 2s ease-in-out;
+      transition: transform 1s ease-in-out;
     }
 
     .panel.top {
@@ -65,19 +66,34 @@
     /* Girl image in the middle */
     .girl {
       position: absolute;
-      top: 50%;
+      top: 54%;
       left: 0%;
       transform: translateY(-50%);
       width: 200px;
       z-index: 11;
-      animation: moveRight 2s ease-in-out forwards, fadeOut 1s ease-in-out 2.5s forwards;
+      animation: moveRight 2.1s ease-in-out forwards, fadeOut 2s ease-in-out 2.5s forwards;
     }
-
+    .girlLine {
+       position:absolute;
+       top:50%;
+       left:-93%;
+       width:100%;
+       height:1px;
+       background:black;
+       animation: moveLineRight 2s ease-in-out forwards, fadeOut 1s ease-in-out 2s forwards;
+    }
+    
     /* Girl moves left to right */
     @keyframes moveRight {
       to {
-        left: 50%;
+        left: 120%;
         transform: translate(-50%, -50%);
+      }
+    }
+    @keyframes moveLineRight{
+      to {
+         left: 50%;
+         transform: translate(-50%,-50%);
       }
     }
 
@@ -94,13 +110,21 @@
       transform: translateY(-100%);
     }
     .overlay.open .panel.bottom {
-      transform: translateY(100%);
+      transform: translateY(100%);           
     }
 
     /* Show homepage after animation */
     .show-home {
       opacity: 1;
     }
+    @keyframes overlayOut{
+        to{
+            z-index:-5;
+        }
+    }
+    
+
+    
   </style>
 </head>
 <body>
@@ -116,8 +140,10 @@
   <!-- Overlay animation -->
   <div class="overlay">
     <div class="panel top"></div>
+        <div class="girlLine">.</div>
     <div class="panel bottom"></div>
-    <img src="../assets/images/girlanimation.png" alt="Girl Opening" class="girl"> <!-- Replace with your image -->
+    <img src="../assets/images/girlanimation3 (1).png" alt="Girl Opening" class="girl"> <!-- Replace with your image -->
+    
   </div>
 
 
@@ -136,7 +162,7 @@
     <img id="propic2" src="../assets/images/mainpic.png" alt="">  
   </div>
 <div id="bio">
-   <div style="text-align:center;width:40%;background-color:yelow">
+   <div class="biodiv" style="text-align:center;width:40%;background-color:yelow">
        <img id="mainpic" width="100%" src="../assets/images/mainpic.png" alt="">
    </div>  
    <div id="hero-box">       
@@ -420,7 +446,7 @@
       window.addEventListener('load', function() {
   loadingScreen.style.display = 'none';
 })
-  </script> -->
+  </script>  -->
   <script>
     window.addEventListener("load", () => {
       const overlay = document.querySelector(".overlay");
