@@ -66,7 +66,7 @@
     /* Girl image in the middle */
     .girl {
       position: absolute;
-      top: 54%;
+      top: 51%;
       left: 0%;
       transform: translateY(-50%);
       width: 200px;
@@ -80,7 +80,7 @@
        width:100%;
        height:1px;
        background:black;
-       animation: moveLineRight 2s ease-in-out forwards, fadeOut 1s ease-in-out 2s forwards;
+       animation: moveLineRight 1.8s ease-in-out forwards, fadeOut 6s forwards ;
     }
     
     /* Girl moves left to right */
@@ -122,7 +122,16 @@
             z-index:-5;
         }
     }
-    
+    @media (max-width:800px){
+      .girl{
+          position: absolute;
+          top:54%;
+          left:0%;
+      }
+      .girlLine{
+          animation: moveLineRight 2s ease-in-out forwards, fadeOut 1s ease-in-out 2s forwards;
+      }
+    }
 
     
   </style>
